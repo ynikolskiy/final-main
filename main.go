@@ -67,6 +67,9 @@ func (s ParcelService) PrintClientParcels(client int) error {
 	return nil
 }
 
+/*
+ */
+
 func (s ParcelService) NextStatus(number int) error {
 	parcel, err := s.store.Get(number)
 	if err != nil {
